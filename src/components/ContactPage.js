@@ -23,6 +23,8 @@ const ContactPage = () => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [address, setAddress] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
@@ -30,16 +32,18 @@ const ContactPage = () => {
     event.preventDefault();
 
     const formData = new FormData();
-    formData.append("access_key", "855afd4a-9db1-49bb-85ba-ad38ae1f1996"); // Your key
+    formData.append("access_key", "855afd4a-9db1-49bb-85ba-ad38ae1f1996"); // Your Web3Forms key
     formData.append("name", name);
     formData.append("email", email);
+    formData.append("phone", phone);
+    formData.append("address", address);
     formData.append("subject", subject);
     formData.append("message", message);
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formData, // Important: DO NOT add headers
+        body: formData,
       });
 
       const result = await response.json();
@@ -52,6 +56,8 @@ const ContactPage = () => {
 
         setName("");
         setEmail("");
+        setPhone("");
+        setAddress("");
         setSubject("");
         setMessage("");
       } else {
@@ -81,6 +87,7 @@ const ContactPage = () => {
 
         <div className="contact-right">
           <form className="contact-form" onSubmit={onFormSubmit}>
+            {/* Name + Email */}
             <div className="contact-form-row">
               <div className="contact-form-group">
                 <label htmlFor="name">Name</label>
@@ -103,6 +110,30 @@ const ContactPage = () => {
               </div>
             </div>
 
+            {/* Phone + Address */}
+            <div className="contact-form-row">
+              <div className="contact-form-group">
+                <label htmlFor="phone">Phone Number</label>
+                <input
+                  type="text"
+                  id="phone"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                />
+              </div>
+
+              <div className="contact-form-group">
+                <label htmlFor="address">Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  value={address}
+                  onChange={(e) => setAddress(e.target.value)}
+                />
+              </div>
+            </div>
+
+            {/* Subject */}
             <div className="contact-form-group">
               <label htmlFor="subject">Subject</label>
               <input
@@ -113,6 +144,7 @@ const ContactPage = () => {
               />
             </div>
 
+            {/* Message */}
             <div className="contact-form-group">
               <label htmlFor="message">Message</label>
               <textarea

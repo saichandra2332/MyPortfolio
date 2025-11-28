@@ -1,82 +1,107 @@
+/* MOBILE */
 @media only screen and (max-width: 800px) {
-    .contact-header {
-      font-size: var(--section-heading-size-mobile) !important;
-    }
-    .contact-info {
-      flex-direction: column;
-    }
-  
-    .contact-left,
-    .contact-right {
-      width: 100% !important;
-      margin-bottom: 30px;
-    }
-  }
-  
-  .contact-container {
-    color: white;
-    display: flex;
-    flex-direction: column;
-  }
-  
   .contact-header {
-    font-size: var(--section-heading-size);
-    letter-spacing: var(--heading-letter-spacing);
+    font-size: var(--section-heading-size-mobile) !important;
   }
-  
+
   .contact-info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    flex-direction: column;
   }
-  
-  .contact-left {
-    width: 40%;
-    font-size: 1.1rem;
-  }
-  
-  .contact-left > span {
-    color: var(--section-grey-color);
-    font-style: italic;
-  }
-  
+
+  .contact-left,
   .contact-right {
-    width: 50%;
-    font-weight: 400;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 370px;
+    width: 100% !important;
+    margin-bottom: 30px;
   }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    font-weight: 500;
-  }
-  
+
   .contact-form-row {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .contact-form-row > div {
-    width: 47%;
-  }
-  
-  .contact-form-message {
-    height: 150px;
-  }
-  
-  .contact-form-group {
-    display: flex;
     flex-direction: column;
   }
-  
-  .contact-form-button {
-    width: 70px;
-    height: 30px;
-    font-weight: 500;
+
+  .contact-form-row > div {
+    width: 100% !important;
+    margin-bottom: 20px;
   }
+}
+
+/* MAIN CONTAINER */
+.contact-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+/* HEADER */
+.contact-header {
+  font-size: var(--section-heading-size);
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+/* LEFT + RIGHT BOX */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* LEFT JOKE SECTION */
+.contact-left {
+  width: 40%;
+  font-size: 1.2rem;
+}
+
+.contact-left > span {
+  color: var(--section-grey-color);
+  font-style: italic;
+}
+
+/* RIGHT FORM SECTION */
+.contact-right {
+  width: 50%;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  gap: 20px; /* NEW: Adds spacing between all fields */
+}
+
+/* TWO COLUMN ROWS */
+.contact-form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* NEW: adds spacing between Name/Email etc */
+}
+
+.contact-form-row > div {
+  width: 100%;
+}
+
+/* FORM GROUP */
+.contact-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* NEW: gap between label and input */
+}
+
+/* MESSAGE BOX */
+.contact-form-message {
+  height: 150px;
+  resize: none;
+}
+
+/* BUTTON */
+.contact-form-button {
+  width: 100px;
+  height: 35px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
