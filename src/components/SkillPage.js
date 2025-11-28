@@ -35,9 +35,6 @@ const SkillPage = () => {
               <a href="/skills">MYSQl</a>
             </li>
             <li>
-              <a href="/skills">MS Office</a>
-            </li>
-            <li>
               <a href="/skills">Git Hub</a>
             </li>
             <li>
@@ -45,6 +42,24 @@ const SkillPage = () => {
             </li>
             <li>
               <a href="/skills">React</a>
+            </li>
+            <li>
+              <a href="/skills">Python</a>
+            </li>
+            <li>
+              <a href="/skills">Django</a>
+            </li>
+            <li>
+              <a href="/skills">FastAPI</a>
+            </li>
+            <li>
+              <a href="/skills">Flutter</a>
+            </li>
+            <li>
+              <a href="/skills">Dart</a>
+            </li>
+            <li>
+              <a href="/skills">PostgreSQL</a>
             </li>
             <li>
               <a href="/skills">HTML</a>
@@ -62,9 +77,6 @@ const SkillPage = () => {
               <a href="/skills">MYSQl</a>
             </li>
             <li>
-              <a href="/skills">MS Office</a>
-            </li>
-            <li>
               <a href="/skills">Git Hub</a>
             </li>
             <li>
@@ -72,6 +84,24 @@ const SkillPage = () => {
             </li>
             <li>
               <a href="/skills">React</a>
+            </li>
+            <li>
+              <a href="/skills">Python</a>
+            </li>
+            <li>
+              <a href="/skills">Django</a>
+            </li>
+            <li>
+              <a href="/skills">FastAPI</a>
+            </li>
+            <li>
+              <a href="/skills">Flutter</a>
+            </li>
+            <li>
+              <a href="/skills">Dart</a>
+            </li>
+            <li>
+              <a href="/skills">PostgreSQL</a>
             </li>
             <li>
               <a href="/skills">HTML</a>
@@ -88,9 +118,7 @@ const SkillPage = () => {
             <li>
               <a href="/skills">MYSQl</a>
             </li>
-            <li>
-              <a href="/skills">MS Office</a>
-            </li>
+
             <li>
               <a href="/skills">Git Hub</a>
             </li>
@@ -99,6 +127,24 @@ const SkillPage = () => {
             </li>
             <li>
               <a href="/skills">React</a>
+            </li>
+            <li>
+              <a href="/skills">Python</a>
+            </li>
+            <li>
+              <a href="/skills">Django</a>
+            </li>
+            <li>
+              <a href="/skills">FastAPI</a>
+            </li>
+            <li>
+              <a href="/skills">Flutter</a>
+            </li>
+            <li>
+              <a href="/skills">Dart</a>
+            </li>
+            <li>
+              <a href="/skills">PostgreSQL</a>
             </li>
             
           </ul>
