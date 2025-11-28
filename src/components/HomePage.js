@@ -18,7 +18,7 @@ const HomePage = () => {
             This is<span> Sai Chandra</span>,
           </p>
         </div>
-        <span>a Web developer.</span>
+        <span>a Web and Android developer.</span>
       </div>
       <div className="home-page-footer">
         <a
